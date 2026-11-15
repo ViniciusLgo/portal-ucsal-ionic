@@ -1,0 +1,47 @@
+/* ===== Identidade visual UCSal ===== */
+:root {
+  --ucsal-marinho: #253266;
+  --ucsal-petroleo: #216F7D;
+  --ucsal-petroleo-escuro: #08687E;
+  --ucsal-azul-claro: #49AEC8;
+  --ucsal-laranja: #FAA635;
+  --ucsal-fundo: #F4F6FA;
+}
+
+/* Barra de titulo */
+.bar.bar-positive {
+  background-color: var(--ucsal-marinho);
+  border-color: var(--ucsal-marinho);
+  color: #FFFFFF;
+}
+.bar.bar-positive .title,
+.bar.bar-positive .button {
+  color: #FFFFFF;
+}
+
+/* Botoes principais */
+.button.button-positive {
+  background-color: var(--ucsal-azul-claro);
+  border-color: var(--ucsal-azul-claro);
+  color: #FFFFFF;
+}
+.button.button-positive:hover,
+.button.button-positive.active {
+  background-color: var(--ucsal-petroleo);
+  border-color: var(--ucsal-petroleo);
+}
+
+/* Fundo das telas */
+.scroll-content { background-color: var(--ucsal-fundo); }
+
+/* ===== Menu lateral ===== */
+.menu,
+.menu .scroll-content { background-color: var(--ucsal-marinho); }
+.menu .item {
+  background-color: var(--ucsal-marinho);
+  border-color: rgba(255,255,255,0.08);
+  color: #FFFFFF;
+}
+.menu .item.ativo,
+.menu .item:hover { background-color: var(--ucsal-petroleo); }
+.menu .item .icon { color: var(--ucsal-laranja); }
