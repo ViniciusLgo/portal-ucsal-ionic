@@ -246,3 +246,11 @@
   color: #FFFFFF;
 }
 .aviso-copiado { color: #1E6B3A; font-size: 14px; margin: 8px 0 0; text-align: center; }
+
+/* Em tela grande o conteudo fica centralizado, para nao esticar de ponta a ponta */
+@media (min-width: 768px) {
+  ion-side-menu-content .scroll {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
