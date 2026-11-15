@@ -1,3 +1,35 @@
 <ion-view view-title="Mural">
-  <ion-content class="padding"><p>Mural (Passo 4)</p></ion-content>
+  <ion-content>
+
+    <div class="barra-filtro">
+      <button class="button button-small botao-filtro"
+              ng-class="{ 'filtro-ativo': categoriaSelecionada === '' }"
+              ng-click="filtrarPor('')">Tudo</button>
+      <button class="button button-small botao-filtro"
+              ng-class="{ 'filtro-ativo': categoriaSelecionada === 'Noticia' }"
+              ng-click="filtrarPor('Noticia')">Noticias</button>
+      <button class="button button-small botao-filtro"
+              ng-class="{ 'filtro-ativo': categoriaSelecionada === 'Evento' }"
+              ng-click="filtrarPor('Evento')">Eventos</button>
+    </div>
+
+    <div class="card card-publicacao"
+         ng-repeat="item in publicacoes | filter:{ categoria: categoriaSelecionada }">
+
+      <img class="imagem-publicacao" ng-src="{{ item.imagem }}" alt="{{ item.titulo }}">
+
+      <div class="item item-text-wrap">
+        <span class="etiqueta"
+              ng-class="{ 'etiqueta-evento': item.categoria === 'Evento' }">{{ item.categoria }}</span>
+        <span class="data-publicacao">{{ item.data | date:'dd/MM/yyyy' }}</span>
+
+        <h2 class="titulo-publicacao">{{ item.titulo }}</h2>
+        <p class="resumo-publicacao">{{ item.resumo }}</p>
+
+        <a class="button button-block botao-ler-mais" href="#/app/mural/{{ item.id }}">Ler mais</a>
+      </div>
+
+    </div>
+
+  </ion-content>
 </ion-view>

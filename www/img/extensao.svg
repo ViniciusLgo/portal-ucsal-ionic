@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280">
+  <rect width="640" height="280" fill="#216F7D"/>
+  <circle cx="540" cy="40" r="150" fill="#FFFFFF" opacity="0.18"/>
+  <circle cx="90" cy="250" r="110" fill="#FFFFFF" opacity="0.12"/>
+  <text x="40" y="160" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="bold" fill="#FFFFFF">Extensao</text>
+  <rect x="40" y="180" width="90" height="6" fill="#FFFFFF"/>
+</svg>

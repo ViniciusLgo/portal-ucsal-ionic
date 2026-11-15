@@ -18,7 +18,7 @@ angular.module('ucsalApp', ['ionic'])
 
     .state('menu.mural', {
       url: '/mural',
-      views: { 'conteudo': { templateUrl: 'templates/mural.html' } }
+      views: { 'conteudo': { templateUrl: 'templates/mural.html', controller: 'MuralCtrl' } }
     })
 
     .state('menu.perfil', {

@@ -1,4 +1,4 @@
-/* ===== Identidade visual UCSal ===== */
+/* Identidade visual UCSal */
 :root {
   --ucsal-marinho: #253266;
   --ucsal-petroleo: #216F7D;
@@ -34,7 +34,7 @@
 /* Fundo das telas */
 .scroll-content { background-color: var(--ucsal-fundo); }
 
-/* ===== Menu lateral ===== */
+/* Menu lateral */
 .menu,
 .menu .scroll-content { background-color: var(--ucsal-marinho); }
 .menu .item {
@@ -45,7 +45,7 @@
 .menu .item.ativo,
 .menu .item:hover { background-color: var(--ucsal-petroleo); }
 .menu .item .icon { color: var(--ucsal-laranja); }
-/* ===== Tela de login ===== */
+/* Tela de login */
 .tela-login .scroll-content,
 .tela-login { background-color: #1D2233; }
 
@@ -100,7 +100,7 @@
 }
 .dica-login { color: #7A8099; text-align: center; font-size: 13px; margin-top: 18px; }
 
-/* ===== Cabecalho do menu lateral ===== */
+/* Cabecalho do menu lateral */
 .cabecalho-menu {
   background-color: var(--ucsal-petroleo);
   border-color: var(--ucsal-petroleo);
@@ -113,3 +113,50 @@
 .matricula-aluno { color: rgba(255,255,255,0.75); font-size: 13px; margin: 2px 0 0; }
 .conteudo-menu { top: 76px; }
 .item-sair { color: var(--ucsal-laranja) !important; }
+
+/* Mural de noticias */
+.barra-filtro {
+  background-color: #FFFFFF;
+  padding: 10px 12px;
+  border-bottom: 1px solid #DDE1E8;
+}
+.button.botao-filtro {
+  background-color: #FFFFFF;
+  border: 1px solid var(--ucsal-marinho);
+  color: var(--ucsal-marinho);
+  margin-right: 6px;
+}
+.button.botao-filtro.filtro-ativo {
+  background-color: var(--ucsal-marinho);
+  color: #FFFFFF;
+}
+.card-publicacao {
+  margin: 12px;
+  padding: 0;
+  overflow: hidden;
+}
+.imagem-publicacao {
+  width: 100%;
+  display: block;
+}
+.etiqueta {
+  background-color: var(--ucsal-petroleo);
+  color: #FFFFFF;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+}
+.etiqueta-evento { background-color: var(--ucsal-laranja); }
+.data-publicacao { color: #7A8099; font-size: 13px; margin-left: 8px; }
+.titulo-publicacao {
+  color: var(--ucsal-marinho);
+  font-size: 17px;
+  margin: 10px 0 6px;
+}
+.resumo-publicacao { color: #555555; font-size: 14px; margin: 0 0 12px; }
+.botao-ler-mais {
+  background-color: var(--ucsal-azul-claro);
+  border-color: var(--ucsal-azul-claro);
+  color: #FFFFFF;
+}
