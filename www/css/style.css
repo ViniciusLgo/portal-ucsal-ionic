@@ -45,3 +45,71 @@
 .menu .item.ativo,
 .menu .item:hover { background-color: var(--ucsal-petroleo); }
 .menu .item .icon { color: var(--ucsal-laranja); }
+/* ===== Tela de login ===== */
+.tela-login .scroll-content,
+.tela-login { background-color: #1D2233; }
+
+.card-login {
+  background-color: var(--ucsal-petroleo-escuro);
+  max-width: 380px;
+  margin: 12% auto 0;
+  padding: 28px 24px 32px;
+}
+.titulo-login {
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 24px;
+}
+.campo-login { display: flex; margin-bottom: 14px; }
+.icone-campo {
+  background-color: var(--ucsal-laranja);
+  color: #FFFFFF;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.campo-login input {
+  flex: 1;
+  border: 0;
+  padding: 12px 14px;
+  font-size: 15px;
+  background-color: #FFFFFF;
+  color: #333333;
+}
+.botao-acessar {
+  background-color: var(--ucsal-azul-claro);
+  border-color: var(--ucsal-azul-claro);
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.botao-acessar.disabled,
+.botao-acessar[disabled] { opacity: 0.5; }
+.msg-erro {
+  background-color: rgba(255,255,255,0.12);
+  color: #FFD9D9;
+  padding: 10px 12px;
+  margin: 16px 0 0;
+  font-size: 14px;
+}
+.dica-login { color: #7A8099; text-align: center; font-size: 13px; margin-top: 18px; }
+
+/* ===== Cabecalho do menu lateral ===== */
+.cabecalho-menu {
+  background-color: var(--ucsal-petroleo);
+  border-color: var(--ucsal-petroleo);
+  height: 76px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+}
+.nome-aluno { color: #FFFFFF; font-size: 15px; margin: 0; font-weight: 600; }
+.matricula-aluno { color: rgba(255,255,255,0.75); font-size: 13px; margin: 2px 0 0; }
+.conteudo-menu { top: 76px; }
+.item-sair { color: var(--ucsal-laranja) !important; }

@@ -1,9 +1,31 @@
-<ion-view view-title="Login">
-  <ion-content class="padding">
-    <h1>Portal do Aluno UCSal</h1>
-    <p>Tela de login (vamos construir no Passo 3)</p>
-    <a class="button button-full button-positive" href="#/app/noticias">
-      Ir para o mural
-    </a>
+<ion-view hide-nav-bar="true">
+  <ion-content class="tela-login">
+
+    <div class="card-login">
+      <h1 class="titulo-login">Portal do Aluno</h1>
+
+      <form name="formLogin" novalidate ng-submit="entrar()">
+        <div class="campo-login">
+          <span class="icone-campo"><i class="icon ion-person"></i></span>
+          <input type="text" placeholder="Matricula" ng-model="credenciais.matricula">
+        </div>
+
+        <div class="campo-login">
+          <span class="icone-campo"><i class="icon ion-locked"></i></span>
+          <input type="password" placeholder="Senha" ng-model="credenciais.senha">
+        </div>
+
+        <button type="submit" class="button button-block botao-acessar" ng-disabled="camposVazios()">
+          ACESSAR
+        </button>
+      </form>
+
+      <p class="msg-erro" ng-if="erro">
+        <i class="icon ion-alert-circled"></i> {{ erro }}
+      </p>
+    </div>
+
+    <p class="dica-login">Teste: 20261001 / 123456</p>
+
   </ion-content>
 </ion-view>

@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Portal do Aluno UCSal</title>
 
-  <!-- Ionic 1 via CDN: CSS + bundle (Ionic + AngularJS + ui-router) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionic-sdk@1.2.4/release/css/ionic.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://cdn.jsdelivr.net/npm/ionic-sdk@1.2.4/release/js/ionic.bundle.min.js"></script>
 
-  <!-- Nossa aplicacao -->
   <script src="js/app.js"></script>
+  <script src="js/services/AuthService.js"></script>
+  <script src="js/controllers/LoginCtrl.js"></script>
+  <script src="js/controllers/MenuCtrl.js"></script>
 </head>
 <body ng-app="ucsalApp">
 
-  <!-- O ui-router troca as telas aqui dentro -->
   <ion-nav-view></ion-nav-view>
 
 </body>
