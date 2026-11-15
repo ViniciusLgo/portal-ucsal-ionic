@@ -1,2 +1,2 @@
 # portal-ucsal-ionic
-atividade pratica em ionic, raliz
+atividade pratica em ionic
