@@ -1,3 +1,45 @@
 <ion-view view-title="Financeiro">
-  <ion-content class="padding"><p>Financeiro (Passo 7)</p></ion-content>
+  <ion-content>
+
+    <label class="item item-input item-select seletor-semestre">
+      <span class="input-label">Semestre letivo</span>
+      <select ng-model="filtro.semestre"
+              ng-options="s as s for s in semestres"></select>
+    </label>
+
+    <div class="resumo-aberto" ng-if="totalAberto > 0">
+      Em aberto neste semestre: <strong>{{ totalAberto | currency:'R$ ' }}</strong>
+    </div>
+    <div class="resumo-quitado" ng-if="totalAberto === 0">
+      Semestre quitado. Nenhuma parcela em aberto.
+    </div>
+
+    <div class="card card-parcela" ng-repeat="parcela in mensalidades">
+      <div class="item item-text-wrap">
+
+        <div class="linha-parcela">
+          <h2 class="mes-parcela">{{ parcela.mes }}</h2>
+          <span class="selo"
+                ng-class="parcela.status === 'Paga' ? 'selo-paga' : 'selo-aberta'">{{ parcela.status }}</span>
+        </div>
+
+        <p class="info-parcela">
+          Vencimento: {{ parcela.vencimento | date:'dd/MM/yyyy' }}<br>
+          Valor: <strong>{{ parcela.valor | currency:'R$ ' }}</strong>
+        </p>
+
+        <div ng-if="parcela.status === 'A Pagar'">
+          <p class="codigo-barras">{{ parcela.codigoBarras }}</p>
+          <button class="button button-block botao-copiar" ng-click="copiarCodigo(parcela)">
+            <i class="icon ion-ios-copy-outline"></i> Copiar codigo de barras
+          </button>
+          <p class="aviso-copiado" ng-if="mesCopiado === parcela.mes">
+            <i class="icon ion-checkmark-circled"></i> Codigo copiado
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </ion-content>
 </ion-view>

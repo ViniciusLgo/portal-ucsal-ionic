@@ -38,7 +38,7 @@ angular.module('ucsalApp', ['ionic'])
 
     .state('menu.financeiro', {
       url: '/financeiro',
-      views: { 'conteudo': { templateUrl: 'templates/financeiro.html' } }
+      views: { 'conteudo': { templateUrl: 'templates/financeiro.html', controller: 'FinanceiroCtrl' } }
     });
 
   $urlRouterProvider.otherwise('/login');
