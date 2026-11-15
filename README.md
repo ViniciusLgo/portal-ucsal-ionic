@@ -51,7 +51,7 @@ www/
 │   ├── controllers/
 │   │   ├── LoginCtrl.js
 │   │   ├── MenuCtrl.js
-│   │   ├── MuralCtrl.js
+│   │   ├── NoticiasCtrl.js
 │   │   ├── NoticiaDetalheCtrl.js
 │   │   ├── PerfilCtrl.js
 │   │   └── FinanceiroCtrl.js
@@ -63,7 +63,7 @@ www/
 ├── templates/
 │   ├── login.html
 │   ├── menu.html
-│   ├── mural.html
+│   ├── noticias.html
 │   ├── noticia-detalhe.html
 │   ├── perfil.html
 │   └── financeiro.html
@@ -74,7 +74,7 @@ Nenhum dado fica escrito direto no HTML ou nos controllers. Os controllers só p
 
 ## Recursos do AngularJS usados
 
-Rotas com `$stateProvider` e `$urlRouterProvider` do ui-router, incluindo uma rota com parâmetro (`/mural/:id`) e um state abstrato que segura o menu lateral.
+Rotas com `$stateProvider` e `$urlRouterProvider` do ui-router, incluindo uma rota com parâmetro (`/noticias/:id`) e um state abstrato que segura o menu lateral.
 
 Services criados com `.factory()`, guardando os dados em variáveis privadas e expondo só os métodos de busca e atualização.
 

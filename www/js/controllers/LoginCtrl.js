@@ -19,6 +19,6 @@ angular.module('ucsalApp')
       return;
     }
     $scope.erro = '';
-    $state.go('menu.mural');
+    $state.go('menu.noticias');
   };
 });

@@ -13,16 +13,17 @@ angular.module('ucsalApp', ['ionic'])
     .state('menu', {
       url: '/app',
       abstract: true,
-      templateUrl: 'templates/menu.html'
+      templateUrl: 'templates/menu.html',
+      controller: 'MenuCtrl'
     })
 
-    .state('menu.mural', {
-      url: '/mural',
-      views: { 'conteudo': { templateUrl: 'templates/mural.html', controller: 'MuralCtrl' } }
+    .state('menu.noticias', {
+      url: '/noticias',
+      views: { 'conteudo': { templateUrl: 'templates/noticias.html', controller: 'NoticiasCtrl' } }
     })
 
     .state('menu.noticia', {
-      url: '/mural/:id',
+      url: '/noticias/:id',
       views: {
         'conteudo': {
           templateUrl: 'templates/noticia-detalhe.html',
