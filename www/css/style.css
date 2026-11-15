@@ -180,3 +180,22 @@
   border-color: var(--ucsal-marinho);
   color: #FFFFFF;
 }
+
+/* Tela de dados do aluno */
+.aviso-secao {
+  background-color: #E8ECF3;
+  color: var(--ucsal-marinho);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+}
+.item-input input[disabled] {
+  color: #8A8F9C;
+  background-color: #F7F8FA;
+}
+.botao-salvar {
+  background-color: var(--ucsal-petroleo);
+  border-color: var(--ucsal-petroleo);
+  color: #FFFFFF;
+}

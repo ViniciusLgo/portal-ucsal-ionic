@@ -1,3 +1,60 @@
 <ion-view view-title="Meus Dados">
-  <ion-content class="padding"><p>Meus Dados (Passo 6)</p></ion-content>
+  <ion-content>
+
+    <div class="aviso-secao">Dados institucionais (somente leitura)</div>
+
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Nome completo</span>
+        <input type="text" ng-model="dados.nome" ng-disabled="camposBloqueados">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Matricula</span>
+        <input type="text" ng-model="dados.matricula" ng-disabled="camposBloqueados">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Curso</span>
+        <input type="text" ng-model="dados.curso" ng-disabled="camposBloqueados">
+      </label>
+    </div>
+
+    <div class="aviso-secao">Contato</div>
+
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">E-mail pessoal</span>
+        <input type="email" ng-model="dados.email">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Telefone / WhatsApp</span>
+        <input type="tel" ng-model="dados.telefone">
+      </label>
+    </div>
+
+    <div class="aviso-secao">Endereco</div>
+
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">CEP</span>
+        <input type="text" ng-model="dados.cep">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Rua</span>
+        <input type="text" ng-model="dados.rua">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Bairro</span>
+        <input type="text" ng-model="dados.bairro">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Cidade</span>
+        <input type="text" ng-model="dados.cidade">
+      </label>
+    </div>
+
+    <div class="padding">
+      <button class="button button-block botao-salvar" ng-click="salvar()">Salvar alteracoes</button>
+    </div>
+
+  </ion-content>
 </ion-view>

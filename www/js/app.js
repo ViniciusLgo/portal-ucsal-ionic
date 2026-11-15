@@ -33,7 +33,7 @@ angular.module('ucsalApp', ['ionic'])
 
     .state('menu.perfil', {
       url: '/perfil',
-      views: { 'conteudo': { templateUrl: 'templates/perfil.html' } }
+      views: { 'conteudo': { templateUrl: 'templates/perfil.html', controller: 'PerfilCtrl' } }
     })
 
     .state('menu.financeiro', {
