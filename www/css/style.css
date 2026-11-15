@@ -160,3 +160,23 @@
   border-color: var(--ucsal-azul-claro);
   color: #FFFFFF;
 }
+
+/* Detalhe da publicacao */
+.imagem-detalhe { width: 100%; display: block; }
+.corpo-detalhe { padding: 16px; }
+.titulo-detalhe {
+  color: var(--ucsal-marinho);
+  font-size: 21px;
+  margin: 12px 0 10px;
+}
+.texto-detalhe {
+  color: #444444;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.botao-voltar {
+  background-color: var(--ucsal-marinho);
+  border-color: var(--ucsal-marinho);
+  color: #FFFFFF;
+}

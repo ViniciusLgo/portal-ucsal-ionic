@@ -1,0 +1,25 @@
+<ion-view view-title="Publicacao">
+  <ion-content>
+
+    <div ng-if="item">
+      <img class="imagem-detalhe" ng-src="{{ item.imagem }}" alt="{{ item.titulo }}">
+
+      <div class="corpo-detalhe">
+        <span class="etiqueta"
+              ng-class="{ 'etiqueta-evento': item.categoria === 'Evento' }">{{ item.categoria }}</span>
+        <span class="data-publicacao">{{ item.data | date:'dd/MM/yyyy' }}</span>
+
+        <h1 class="titulo-detalhe">{{ item.titulo }}</h1>
+        <p class="texto-detalhe">{{ item.conteudo }}</p>
+
+        <a class="button button-block botao-voltar" href="#/app/mural">Voltar para o mural</a>
+      </div>
+    </div>
+
+    <div class="padding" ng-if="!item">
+      <p>Publicacao nao encontrada.</p>
+      <a class="button button-block botao-voltar" href="#/app/mural">Voltar para o mural</a>
+    </div>
+
+  </ion-content>
+</ion-view>
